@@ -2,64 +2,66 @@
 font-family: Kumbh Sans;
 src: url(fonts/KumbhSans-Regular.ttf);
 }
-body {
-    width: 1400px;
+#workarea {
+    position: relative;
+    width: 1440px;
+    height: 720px;
     background-color: hsl(185, 75%, 39%);
-    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-top.svg);
-    background-position: -50% 60%, 150% -40%;
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-top-2.svg);
+    background-position: -300px -470px, 700px 360px;
     background-repeat: no-repeat;
 }
 
-
  #card {
      position: absolute;
-     width: 25%;
-     height: 50%;
-     left: 37.5%;
-     top: 25%;
+     width: 350px;
+     height: 374px;
+    left: 545px;
+     top: 173px;
      background-color: #fff;
      border-radius: 15px;
-     box-shadow: 5px 5px 50px rgba(0,0,0,.4);
+     box-shadow: 5px 5px 50px rgba(0,0,0,.2);
  }
  #pattern {
-     position:relative;
+     position: relative;
      width: 100%;
-     height: 38.5%;
+     height: 140px;
      background-image: url(images/bg-pattern-card.svg);
     background-repeat: repeat;
     border-radius: 15px 15px 0% 0%;
 }
-#thumb {
-    position:absolute; 
-    top:25%;
-   margin-left:37.5%;
+img {
+    position:absolute;
+    width: 96px;
+    height: 97px;
+    top: 87px;
+   margin-left:127px;
    margin-right: auto;
     border-radius: 100%;
     background-color:white;
+    border: solid 4px white;
 }
-#thumb img {
-    width:90%;
-    height: 90%;
-    padding-left: 5%;
-    padding-top: 5%;
-    border-radius: 100%;
-}
+
 #info h2{
     position: relative;
-    padding-top: 15%;
+    padding-top: 61px;
     text-align: center;
     font-family: Kumbh Sans;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: bolder;
     color: hsl(229, 23%, 23%);
     margin-bottom: 10px;
+    letter-spacing: 0.5px;
+   
 }
 #info h2 span{
     font-family: Kumbh Sans;
-    font-size: 18px;
+    font-size: 17px;
     color: hsl(0, 0%, 59%);
     margin-bottom: 0px;
-    font-weight: 400;
+    padding-left: 2px;
+    font-weight: 300;
+    
 }
 
 #info h3 {
@@ -68,7 +70,7 @@ body {
     text-align: center;
     color: hsl(0, 0%, 59%);
     font-size: smaller;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 25px;
 }
 
@@ -77,41 +79,91 @@ body {
     padding-left:0px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     border-top-width: 1px; 
     border-top-style: solid;
-    border-color: hsl(0, 0%, 59%);
+    border-color: rgba(150, 150, 150,.5);
     list-style-type: none;
 }
 #info ul li {
     text-align: center;
-    flex: 1 1 80px;
+    flex: 0 0 80px;
     border-top: 10px gray;
+    margin-top: 0px;
+   
 }
 
 #info ul li h2 {
     font-family: Kumbh Sans;
-    font-size: 18px;
+    font-size: 17px;
     color: hsl(229, 23%, 23%);
     font-weight: 700;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 26px;
+    height: 20px;
+    letter-spacing: .5px;
 }
 #info ul li span {
     font-family: Kumbh Sans;
-    font-size: smaller;
+    font-size: 9px;
     color: hsl(0, 0%, 59%);
     font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .attribution { 
     position: absolute;
-    margin-left: 40%;
+    text-align: center;
     margin-right: auto;
     top:98%;
-    font-size: 11px;
+    font-size: 8px;
     text-align: center;
  }
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
+
+ @media screen and (max-width: 899px) {
+    #workarea {
+        position: relative;
+        width: 375px;
+        height: 667px;
+        background-color: hsl(185, 75%, 39%);
+        background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-top-2.svg);
+        background-position: -400px -300px, 180px 350px;
+        background-size: 600px, 600px;
+        background-repeat: no-repeat;
+    }
+
+    #card {
+        position: absolute;
+        width: 326px;
+        height: 374px;
+        left: 24px;
+        top: 147px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 5px 5px 50px rgba(0,0,0,.2);
+    }
+    #pattern {
+        position: relative;
+        width: 100%;
+        height: 140px;
+        background-image: url(images/bg-pattern-card.svg);
+        background-repeat: repeat;
+        border-radius: 15px 15px 0% 0%;
+    }
+    img {
+        position:absolute;
+        width: 96px;
+        height: 97px;
+        top: 87px;
+    margin-left:110px;
+    margin-right: auto;
+        border-radius: 100%;
+        background-color:white;
+        border: solid 4px white;
+    }
+}
