@@ -2,6 +2,9 @@
 font-family: Kumbh Sans;
 src: url(fonts/KumbhSans-Regular.ttf);
 }
+body {
+    margin: 0px 0px 0px 0px;
+}
 #workarea {
     position: relative;
     width: 1440px;
